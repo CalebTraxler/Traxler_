@@ -43,9 +43,14 @@
 
         .logo {
             color: #ffffff;
-            font-size: 1.5rem;
-            font-weight: bold;
             text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
         }
 
         .nav-links {
@@ -64,7 +69,7 @@
         }
 
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1920/1080') center/cover;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/Banner.png') center/cover;
             height: 100vh;
             display: flex;
             align-items: center;
@@ -175,13 +180,19 @@
             .nav-links {
                 display: none;
             }
+
+            .logo img {
+                height: 32px;
+            }
         }
     </style>
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-content">
-            <a href="#" class="logo">Traxler Technology</a>
+            <a href="#" class="logo">
+                <img src="images/Traxler_Tech_Logo.png" alt="Traxler Technology">
+            </a>
             <div class="nav-links">
                 <a href="#services">Services</a>
                 <a href="#about">About</a>
@@ -223,7 +234,7 @@
                 <p>We are a cutting-edge computer vision technology company dedicated to pushing the boundaries of what's possible with artificial intelligence and machine learning.</p>
                 <p>Our team of expert engineers and researchers works tirelessly to develop innovative solutions that help businesses automate processes, enhance security, and gain valuable insights from visual data.</p>
             </div>
-            <img src="/api/placeholder/600/400" alt="Technology Visualization" class="feature-image">
+            <img src="images/Banner.png" alt="Technology Visualization" class="feature-image">
         </div>
     </section>
 
