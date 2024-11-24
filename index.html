@@ -4,184 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Traxler Technology - Computer Vision Solutions</title>
-    <style>
-        :root {
-            --primary-blue: #007bff;
-            --dark-blue: #004a99;
-            --light-blue: #e6f3ff;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-        }
-
-        body {
-            background-color: #ffffff;
-            color: #000000;
-            line-height: 1.6;
-        }
-
-        .navbar {
-            background-color: #000000;
-            padding: 1rem 2rem;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .nav-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            color: #ffffff;
-            font-size: 1.5rem;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-        }
-
-        .nav-links a {
-            color: #ffffff;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: var(--primary-blue);
-        }
-
-        .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1920/1080') center/cover;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: #ffffff;
-            padding: 0 1rem;
-        }
-
-        .hero-content {
-            max-width: 800px;
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-        }
-
-        .cta-button {
-            background-color: var(--primary-blue);
-            color: #ffffff;
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 5px;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .cta-button:hover {
-            background-color: var(--dark-blue);
-        }
-
-        .section {
-            padding: 5rem 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .service-card {
-            background-color: #ffffff;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .service-card h3 {
-            color: var(--primary-blue);
-            margin-bottom: 1rem;
-        }
-
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-        }
-
-        .about-text h2 {
-            margin-bottom: 1.5rem;
-        }
-
-        .feature-image {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        footer {
-            background-color: #000000;
-            color: #ffffff;
-            padding: 3rem 2rem;
-            text-align: center;
-        }
-
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-            
-            .about-content {
-                grid-template-columns: 1fr;
-            }
-
-            .nav-links {
-                display: none;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-content">
-            <a href="#" class="logo">Traxler Technology</a>
+            <a href="#" class="logo">
+                <img src="images/Traxler_Tech_Logo.png" alt="Traxler Technology Logo" class="logo-img">
+            </a>
             <div class="nav-links">
                 <a href="#services">Services</a>
                 <a href="#about">About</a>
@@ -190,7 +21,7 @@
         </div>
     </nav>
 
-    <section class="hero">
+    <section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/Banner.png')">
         <div class="hero-content">
             <h1>Advanced Computer Vision Solutions</h1>
             <p>Transforming the future through cutting-edge computer vision technology and artificial intelligence</p>
@@ -223,13 +54,16 @@
                 <p>We are a cutting-edge computer vision technology company dedicated to pushing the boundaries of what's possible with artificial intelligence and machine learning.</p>
                 <p>Our team of expert engineers and researchers works tirelessly to develop innovative solutions that help businesses automate processes, enhance security, and gain valuable insights from visual data.</p>
             </div>
-            <img src="/api/placeholder/600/400" alt="Technology Visualization" class="feature-image">
+            <img src="images/Banner.png" alt="Technology Visualization" class="feature-image">
         </div>
     </section>
 
     <footer id="contact">
         <p>Contact us to learn more about our computer vision solutions</p>
         <a href="mailto:contact@traxlertech.com" class="cta-button">Contact Us</a>
+        <div class="footer-content">
+            <p class="copyright">&copy; <span class="copyright-year"></span> Traxler Technology. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
